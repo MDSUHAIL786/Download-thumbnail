@@ -17,7 +17,7 @@ urlInp.onkeyup=()=>{
      }else if(text.indexOf("https://youtu.be/")!=-1){
           let videoId=text.split("be/")[1].substring(0,11);
           let videoThumbnail=`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-          console.log(videoThumbnail);
+          
           imgtag.src=videoThumbnail;
      }else if(text.match(/\.(jpe?g|png|gif|bmp|webp)$/i)){
           
